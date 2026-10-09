@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #111827;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+.home {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-content p:first-child {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.home-content h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.home-content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.home-content a {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 5px;
+    background-color: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.home-content a:hover {
+    background-color: #38bdf8;
+}
+.about {
+    min-height: 80vh;
+    padding: 80px 15%;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.skills {
+    min-height: 80vh;
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.skill-card h2 {
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    line-height: 1.6;
+}
+.projects {
+    min-height: 80vh;
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.projects h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.project-card h2 {
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+.certificates {
+    min-height: 80vh;
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.certificates h1 {
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.certificates-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.certificate-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.certificate-card h2 {
+    margin-bottom: 15px;
+}
+
+.certificate-card p {
+    line-height: 1.6;
+}
+.contact {
+    min-height: 80vh;
+    padding: 80px 15%;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.contact > p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.contact-info {
+    background-color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 45px;
+    }
+
+    .home-content h2 {
+        font-size: 20px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .certificates-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about,
+    .contact {
+        padding: 60px 8%;
+    }
+}
